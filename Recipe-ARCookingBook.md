@@ -71,17 +71,35 @@ The **AR Cooking Book** is an interactive Augmented Reality (AR) experience that
 - **Enabling Input System:**  
   - Helps with better control and interaction.  
 ![image](https://github.com/user-attachments/assets/9d55ae52-de34-4aef-8c30-747ee12936e8)
+![image](https://github.com/user-attachments/assets/bf8727ee-a6c5-4ab7-a865-2044c1b51c54)
+
 
 ---
 
 ### **4. Configuring Unity Build Settings** 
-- **Switch to the Target Platform** (Android/iOS).  
+- **Switch to the Target Platform** (Android/iOS).
+- ![image](https://github.com/user-attachments/assets/e98a16b7-018c-42af-9760-4ea98e2bc1c5)
+ 
 - Enable **Development Build** (for easy testing).  
 - **Adjust Player Settings:**
   - iOS: **Set Minimum iOS Version to 11.0**, enable **ARKit Support**, add **Bundle Identifier**.  
   - Android: **Set Minimum API Level (24 for AR apps, 19 for non-AR apps)**.  
   - Remove **Vulkan Graphics API** (not supported in AR).  
   - Set **IL2CPP as the scripting backend** for Android Play Store builds.  
+![image](https://github.com/user-attachments/assets/c6535a7c-4222-4be2-81ee-a594e60d792e)
+Getting started with AR Foundation Install AR Foundation
+Follow these steps to install the AR Foundation Unity package.
+
+Open an existing Unity project, or create a new 3D project.
+Navigate to Window > Package Manager.
+Next to Packages, select Unity Registry.
+
+
+
+In the search bar, type "AR Foundation".
+
+
+
 
 ---
 
