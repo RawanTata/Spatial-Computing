@@ -36,6 +36,111 @@ The **AR Cooking Book** is an interactive Augmented Reality (AR) experience that
 
 ### **📌 B. Create AR Components in Unity**
 
+
+
+### **Main Steps in the Video: "Deploying an AR App with Unity AR Foundation"**  
+
+
+---
+
+### **1. Introduction to AR Foundation** 
+- Overview of **Unity's AR Foundation** package.  
+- AR Foundation supports **Android, iOS (ARKit), and HoloLens**.  
+- Features include **plane detection, image tracking, object tracking, face tracking, body tracking, and more**.  
+
+---
+
+### **2. Understanding AR Foundation Structure** 
+- **Subsystems and Providers:**  
+  - Unity provides **subsystems** (interfaces with required functions).  
+  - **Providers** (e.g., ARCore for Android, ARKit for iOS) implement these functions.  
+- **Managers:**  
+  - Help Unity access **subsystem data** via game objects.  
+  - Example: **Plane Manager** creates a game object when a plane is detected.  
+
+---
+
+### **3. Setting Up Unity for AR Development** 
+  - Start a new project with **Unity's AR Template** (pre-installed AR packages & sample scene).  
+- **Installing Necessary Modules:**
+  - **For Android:** Install **Android Build Support**.  
+  - **For iOS:** Install **iOS Build Support**.  
+- **Adding AR Foundation in an Existing Project:**
+  - Open **Package Manager** → Download **AR Foundation**.  
+  - Install **ARCore XR Plugin (for Android)** or **ARKit XR Plugin (for iOS)**.  
+- **Enabling Input System:**  
+  - Helps with better control and interaction.  
+
+---
+
+### **4. Configuring Unity Build Settings** 
+- **Switch to the Target Platform** (Android/iOS).  
+- Enable **Development Build** (for easy testing).  
+- **Adjust Player Settings:**
+  - iOS: **Set Minimum iOS Version to 11.0**, enable **ARKit Support**, add **Bundle Identifier**.  
+  - Android: **Set Minimum API Level (24 for AR apps, 19 for non-AR apps)**.  
+  - Remove **Vulkan Graphics API** (not supported in AR).  
+  - Set **IL2CPP as the scripting backend** for Android Play Store builds.  
+
+---
+
+### **5. Enabling XR Plugin Management** 
+- Go to **XR Plugin Management** in Player Settings.  
+- **Enable ARCore (Android) or ARKit (iOS)**.  
+- Check settings such as **face tracking** if needed.  
+
+---
+
+### **6. Setting Up AR Scene in Unity** 
+- **Create AR Session Game Object**:
+  - Add **AR Session Component** (Manages AR lifecycle).  
+  - Add **AR Input Manager** (Handles user interactions).  
+- **Create AR Session Origin**:
+  - Converts **AR session space to Unity world coordinates**.  
+  - Attach an **AR Camera** (with AR Camera Manager & Tracked Pose Driver).  
+- **Adding Objects in AR Space**:
+  - Place a **3D object (Cube)** in front of the camera for proper positioning.  
+
+---
+
+### **7. Building and Deploying to Mobile** 
+- Go to **Build Settings** → Select correct platform → Add open scenes.  
+- Click **Build**, create a **Builds Folder**, and export the project.  
+- **For iOS:**  
+  - Open in **Xcode**, enable **Automatic Signing**, and deploy to a connected iPhone.  
+- **For Android:**  
+  - Build directly to phone.  
+  - Ensure **Developer Mode is enabled** on the device.  
+
+---
+
+### **8. Running the AR App on Your Phone** 
+- Launch the AR app on the phone.  
+- **Grant camera access** (iOS).  
+- The placed **3D Cube appears in AR space**.  
+
+---
+
+### **9. Exploring Unity's AR Foundation Samples** 
+- Unity provides **sample AR projects** on **GitHub**.  
+- Download the **sample scenes** (e.g., **image tracking, plane detection**) for reference.  
+- Future tutorials will cover **advanced AR features**.  
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. **Add an AR Camera**:
    - `Hierarchy → XR → AR Session Origin`.
    - Inside **AR Session Origin**, add:
