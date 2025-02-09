@@ -70,6 +70,7 @@ The **AR Cooking Book** is an interactive Augmented Reality (AR) experience that
   - Install **ARCore XR Plugin (for Android)** or **ARKit XR Plugin (for iOS)**.  
 - **Enabling Input System:**  
   - Helps with better control and interaction.  
+![image](https://github.com/user-attachments/assets/9d55ae52-de34-4aef-8c30-747ee12936e8)
 
 ---
 
