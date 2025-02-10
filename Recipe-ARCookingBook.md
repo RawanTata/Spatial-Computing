@@ -187,23 +187,23 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 2. Enable **USB Debugging** in **Developer Options**.
 3. Connect your phone to your PC via **USB**.
 
-### **📌 B. Set Up Unity for Android Deployment**
+## 📌 B. Setting Up AR Components in Unity
 
-1. In Unity, **go to "File → Build Settings"**.
-2. Select **Android** and click **Switch Platform**.
-3. Install **Android Build Support & SDK** via Unity Hub.
-4. Set **Player Settings**:
-   - **Minimum API Level:** Android 7.0 or higher.
-   - **Scripting Backend:** IL2CPP.
-5. Click **Build & Run** to install the app on your Android device.
+### 1. Add an AR Camera
+- Navigate to `Hierarchy → XR → AR Session Origin`.
+- Inside **AR Session Origin**, add:
+  - **AR Camera Manager**
+  - **AR Raycast Manager**
+  - **AR Pose Driver**
 
-✅ **Now, your AR Cooking Book runs on Android!** 📱🚀
-
-YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.youtube.com/watch?v=Nb62z3J4A_A)  
-
+### 2. Enable Plane Detection
+- Create an empty GameObject named **"AR Plane Manager"**.
+- Add the following components:
+  - **AR Plane Manager**
+  - **AR Raycast Manager**
 ---
 
-### **Main Steps in the Video: "Building and Deploying an Android App from Windows using Unity"**  
+### **Main Steps" Building and Deploying an Android App from Windows using Unity"**  
 
 1. **Introduction to Android Build Process**  
    - Explains the process of building an Android app from a Windows computer using Unity.  
