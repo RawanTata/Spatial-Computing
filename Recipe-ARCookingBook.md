@@ -2,7 +2,7 @@
 
 ## **🎯 Overview**
 
-The **AR Cooking Book** is an interactive Augmented Reality (AR) experience that allows users to **place, move, rotate, and scale virtual kitchen objects** while following a step-by-step cooking guide. Using **Unity’s AR Foundation and XR Interaction Toolkit**, users can engage in a **realistic AR cooking simulation**, interacting with utensils and ingredients in their real-world space.
+The AR Cooking Book is an interactive Augmented Reality (AR) application designed to provide users with an immersive cooking experience. Users can place, move, rotate, and scale virtual kitchen objects while following a step-by-step cooking guide. By leveraging Unity’s AR Foundation and XR Interaction Toolkit, this project delivers a realistic AR cooking simulation, allowing users to interact with utensils and ingredients within their real-world environment.
 
 ---
 
@@ -18,23 +18,21 @@ The **AR Cooking Book** is an interactive Augmented Reality (AR) experience that
 
 ---
 
-## **1️⃣ Setting Up the Project**
+## **1️ Setting Up the Project**
 
-### **📌 A. Install Unity and Required Packages**
+### ** A. Install Unity and Required Packages**
 
 1. **Open Unity Hub** and create a **new 3D project**.
 2. **Install AR Foundation & XR Interaction Toolkit**:
    - Go to **"Window → Package Manager"**.
    - Install:
-     - ✅ **AR Foundation**
-     - ✅ **XR Interaction Toolkit**
-     - ✅ **ARCore XR Plugin** (Android) / **ARKit XR Plugin** (iOS)
+     - **AR Foundation**
+     - **XR Interaction Toolkit**
+     - **ARCore XR Plugin** (Android) / **ARKit XR Plugin** (iOS)
 3. Enable **XR Plugin Management**:
    - Open **"Edit → Project Settings → XR Plug-in Management"**.
    - Under **Android**, enable **ARCore**.
    - Under **iOS**, enable **ARKit**.
-
-### **📌 B. Create AR Components in Unity**
 
 
 
@@ -181,6 +179,26 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 - The placed **3D Cube appears in AR space**.  
 ---
 
+## **2️⃣ Deploying to Android**
+
+### **📌 A. Enable Developer Mode on Android**
+
+1. Open **Settings → About Phone → Tap "Build Number" 7 times**.
+2. Enable **USB Debugging** in **Developer Options**.
+3. Connect your phone to your PC via **USB**.
+
+### **📌 B. Set Up Unity for Android Deployment**
+
+1. In Unity, **go to "File → Build Settings"**.
+2. Select **Android** and click **Switch Platform**.
+3. Install **Android Build Support & SDK** via Unity Hub.
+4. Set **Player Settings**:
+   - **Minimum API Level:** Android 7.0 or higher.
+   - **Scripting Backend:** IL2CPP.
+5. Click **Build & Run** to install the app on your Android device.
+
+✅ **Now, your AR Cooking Book runs on Android!** 📱🚀
+
 YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.youtube.com/watch?v=Nb62z3J4A_A)  
 
 ---
@@ -219,9 +237,6 @@ YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.yo
 
 ![image](https://github.com/user-attachments/assets/c5e4441a-3365-4a60-aa96-3e1400f8bb14)
 
-
-
-
 6. **Connecting and Authorizing Android Device**  
    - Connect the phone via **USB cable**.  
    - Authorize the connection when prompted on the phone.  
@@ -252,8 +267,10 @@ YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.yo
    - Thanks viewers and patrons for their support.  
    - Encourages joining the **Discord community** for discussions and help.  
 
----
 
+---
+---
+📌B. Setting Up AR Components in Unity
 1. **Add an AR Camera**:
    - `Hierarchy → XR → AR Session Origin`.
    - Inside **AR Session Origin**, add:
@@ -269,33 +286,7 @@ YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.yo
 ✅ **Now, Unity is ready for AR development!** 🎉
 
 ---
-
-## **2️⃣ Deploying to Android**
-
-### **📌 A. Enable Developer Mode on Android**
-
-1. Open **Settings → About Phone → Tap "Build Number" 7 times**.
-2. Enable **USB Debugging** in **Developer Options**.
-3. Connect your phone to your PC via **USB**.
-
-### **📌 B. Set Up Unity for Android Deployment**
-
-1. In Unity, **go to "File → Build Settings"**.
-2. Select **Android** and click **Switch Platform**.
-3. Install **Android Build Support & SDK** via Unity Hub.
-4. Set **Player Settings**:
-   - **Minimum API Level:** Android 7.0 or higher.
-   - **Scripting Backend:** IL2CPP.
-5. Click **Build & Run** to install the app on your Android device.
-
-✅ **Now, your AR Cooking Book runs on Android!** 📱🚀
-
----
-
 ## **3️⃣ Placing and Manipulating Objects in AR**
-YouTube Video Link: [https://www.youtube.com/watch?v=5puGSOSmTYc](https://www.youtube.com/watch?v=5puGSOSmTYc)  
-
----
 
 ### **Summary: "Placing and Interacting with Multiple AR Objects in Unity"**  
 
@@ -342,7 +333,6 @@ YouTube Video Link: [https://www.youtube.com/watch?v=5puGSOSmTYc](https://www.yo
 
 ![image](https://github.com/user-attachments/assets/4ab1fc8a-c482-41cd-86cc-cd6d62e78e7e)
 ![image (1)](https://github.com/user-attachments/assets/c38a3f6a-3f2d-4698-a6c3-f77eec8e1667)
-
 
 
 ### **📌 A. Implement AR Object Placement**
