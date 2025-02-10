@@ -212,6 +212,18 @@ YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.yo
    - Tap **Build Number** 7 times to enable **Developer Mode**.  
    - Enable **USB Debugging** under **Developer Options**.  
 
+![Screenshot_20250210-135021 (1)](https://github.com/user-attachments/assets/1eab2319-bfad-468f-9c62-2ee21e195875)
+![Screenshot_20250210-135111 (1)](https://github.com/user-attachments/assets/be23ca44-16c0-4ce8-85ea-03474e22a612)
+
+![Screenshot_20250210-135311 (1)](https://github.com/user-attachments/assets/70211019-e441-4b00-8370-1670119e8721)
+
+![image](https://github.com/user-attachments/assets/c5e4441a-3365-4a60-aa96-3e1400f8bb14)
+
+
+
+
+
+
 6. **Connecting and Authorizing Android Device**  
    - Connect the phone via **USB cable**.  
    - Authorize the connection when prompted on the phone.  
