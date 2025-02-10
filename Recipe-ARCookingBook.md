@@ -5,7 +5,9 @@
 The AR Cooking Book is an interactive Augmented Reality (AR) application designed to provide users with an immersive cooking experience. Users can place, move, rotate, and scale virtual kitchen objects while following a step-by-step cooking guide. By leveraging Unity’s AR Foundation and XR Interaction Toolkit, this project delivers a realistic AR cooking simulation, allowing users to interact with utensils and ingredients within their real-world environment.
 
 ---
+![image](https://github.com/user-attachments/assets/0340d5cd-fe33-4fe4-9e27-a4acda62e5af)
 
+---
 ## **📖 Table of Contents**
 
 1. **Setting Up the Project**
