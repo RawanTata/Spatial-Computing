@@ -257,36 +257,24 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
    - Enable **Development Build** for testing.  
    - Click **Build and Run** to deploy the app to the connected phone.  
    - Select **APK** file location and confirm the build process.  
-
-10. **Troubleshooting and Final Steps**  
-   - If errors occur, check Unity Console for details.  
-   - Ensure the correct API level is selected.  
-   - Use **Unity’s integrated SDK/NDK/JDK** instead of manual Android Studio installation to avoid errors.  
-
-11. **Conclusion and Patreon Shoutouts**  
-   - Thanks viewers and patrons for their support.  
-   - Encourages joining the **Discord community** for discussions and help.  
-
-
 ---
----
-📌B. Setting Up AR Components in Unity
+📌C. Setting Up AR Components in Unity
 1. **Add an AR Camera**:
    - `Hierarchy → XR → AR Session Origin`.
    - Inside **AR Session Origin**, add:
-     - ✅ **AR Camera Manager**
-     - ✅ **AR Raycast Manager**
-     - ✅ **AR Pose Driver**
+     - **AR Camera Manager**
+     - **AR Raycast Manager**
+     - **AR Pose Driver**
 2. **Enable Plane Detection**:
    - `Hierarchy → Create Empty → Rename it "AR Plane Manager"`.
    - Add:
-     - ✅ **AR Plane Manager**
-     - ✅ **AR Raycast Manager**
+     - **AR Plane Manager**
+     - **AR Raycast Manager**
 
-✅ **Now, Unity is ready for AR development!** 🎉
+**Now, Unity is ready for AR development!** 🎉
 
 ---
-## **3️⃣ Placing and Manipulating Objects in AR**
+## **3️ Placing and Manipulating Objects in AR**
 
 ### **Summary: "Placing and Interacting with Multiple AR Objects in Unity"**  
 
@@ -324,9 +312,6 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
    - Build and deploy the AR project.  
    - Move the camera to detect planes.  
    - Tap to **spawn objects**, **select/deselect** them, and use gestures to **move, rotate, and scale**.  
-
-8. **Conclusion**  
-   - Encourages users to **like, subscribe, and join Discord** for questions and support.  
 
 ### Scene:
 ![image](https://github.com/user-attachments/assets/c4e62243-b255-4abf-adb9-d1e8feab87cb)
