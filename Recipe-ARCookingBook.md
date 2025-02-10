@@ -327,6 +327,12 @@ YouTube Video Link: [https://www.youtube.com/watch?v=5puGSOSmTYc](https://www.yo
 8. **Conclusion**  
    - Encourages users to **like, subscribe, and join Discord** for questions and support.  
 
+### Scene:
+![image](https://github.com/user-attachments/assets/c4e62243-b255-4abf-adb9-d1e8feab87cb)
+
+
+
+
 ### **📌 A. Implement AR Object Placement**
 
 1. **Create an "AR Placement Manager"** GameObject.
