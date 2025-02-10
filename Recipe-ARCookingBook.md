@@ -144,7 +144,8 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 3. In the search bar, type **"ARCore XR plugin"**.
 4. Click **Install**.
 5. Navigate to **Edit > Project Settings**.
-6. https://developers.google.com/static/ar/develop/unity-arf/images/getting-started/xrm-enable-arcore.png
+6. ![image](https://github.com/user-attachments/assets/f341387c-be43-437f-8e4f-67532056f183)
+
 7. In **XR Plug-in Management**, open the **Android** tab and **enable ARCore**.
 
 ### **For iOS (ARKit)**
@@ -156,11 +157,6 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 6. In **XR Plug-in Management**, open the **iOS** tab and **enable ARKit**.
 
 ---
-
-✅ **Now, AR Foundation is installed and configured for both Android and iOS!** 🚀
-
-
-
 ### **5. Enabling XR Plugin Management** 
 - Go to **XR Plugin Management** in Player Settings.  
 - **Enable ARCore (Android) or ARKit (iOS)**.  
