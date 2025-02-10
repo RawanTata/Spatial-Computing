@@ -87,21 +87,79 @@ The **AR Cooking Book** is an interactive Augmented Reality (AR) experience that
   - Remove **Vulkan Graphics API** (not supported in AR).  
   - Set **IL2CPP as the scripting backend** for Android Play Store builds.  
 ![image](https://github.com/user-attachments/assets/c6535a7c-4222-4be2-81ee-a594e60d792e)
-Getting started with AR Foundation Install AR Foundation
-Follow these steps to install the AR Foundation Unity package.
+# **Getting Started with AR Foundation**
 
-Open an existing Unity project, or create a new 3D project.
-Navigate to Window > Package Manager.
-Next to Packages, select Unity Registry.
+Unity's **AR Foundation** is a cross-platform framework that allows you to write augmented reality experiences once, then build for either **Android** or **iOS** devices without making any additional changes. The framework is available via **Unity's AR Foundation package**.
 
+## **ARCore Extensions**
+ARCore's optional **ARCore Extensions for AR Foundation** package adds additional functionality, enabling you to use features such as:
+- **Cloud Anchors**
+- **Camera configuration filters**
+- **Recording and Playback**
+---
 
+## **Requirements**
 
-In the search bar, type "AR Foundation".
+### **Android**
+#### **Hardware:**
+- An **ARCore-supported Android device or emulator**
+- A **USB cable** for connecting your device to your development machine
 
+#### **Software:**
+- **Unity 2019.4.3f1 or later** with **Android Build Support**
 
+### **iOS**
+#### **Hardware:**
+- A device that supports **Apple's ARKit** (iPhone 6s and later, iPad 5th gen and later)
+- A **Mac computer with Xcode installed**
 
+#### **Software:**
+- **Unity 2019.4.3f1 or later** with **iOS Build Support**
 
 ---
+
+## **Install AR Foundation**
+Follow these steps to install the **AR Foundation** Unity package.
+
+1. **Open an existing Unity project**, or **create a new 3D project**.
+2. Navigate to **Window > Package Manager**.
+3. Next to **Packages**, select **Unity Registry**.
+   ![image](https://github.com/user-attachments/assets/31eb5dc4-1ef6-433f-bca8-e2a91fc37bd8)
+5. In the search bar, type **"AR Foundation"**.
+. ![image](https://github.com/user-attachments/assets/1e1a893d-fa8a-4dc9-b63f-8bf4db18c46e)
+
+7. Click **Install**.
+![image](https://github.com/user-attachments/assets/475371f1-8357-4896-9479-103eb02aeed3)
+
+---
+
+## **Install and Enable Platform-Specific Plugin Packages**
+The **AR Foundation** package provides an interface for Unity developers but does not implement AR features itself. To use **AR Foundation** on a target device, install separate packages and enable the corresponding plugin for each platform.
+
+### **For Android (ARCore)**
+The **ARCore XR Plugin** package lets you build augmented reality apps for **Android devices**. Follow these steps to install it in your Unity project:
+
+1. Open **Unity > Window > Package Manager**.
+2. Next to **Packages**, select **Unity Registry**.
+3. In the search bar, type **"ARCore XR plugin"**.
+4. Click **Install**.
+5. Navigate to **Edit > Project Settings**.
+6. https://developers.google.com/static/ar/develop/unity-arf/images/getting-started/xrm-enable-arcore.png
+7. In **XR Plug-in Management**, open the **Android** tab and **enable ARCore**.
+
+### **For iOS (ARKit)**
+1. Open **Unity > Window > Package Manager**.
+2. Next to **Packages**, select **Unity Registry**.
+3. In the search bar, type **"ARKit XR Plugin"**.
+4. Click **Install**.
+5. Navigate to **Edit > Project Settings**.
+6. In **XR Plug-in Management**, open the **iOS** tab and **enable ARKit**.
+
+---
+
+✅ **Now, AR Foundation is installed and configured for both Android and iOS!** 🚀
+
+
 
 ### **5. Enabling XR Plugin Management** 
 - Go to **XR Plugin Management** in Player Settings.  
