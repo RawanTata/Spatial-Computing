@@ -164,18 +164,6 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 
 ---
 
-### **6. Setting Up AR Scene in Unity** 
-- **Create AR Session Game Object**:
-  - Add **AR Session Component** (Manages AR lifecycle).  
-  - Add **AR Input Manager** (Handles user interactions).  
-- **Create AR Session Origin**:
-  - Converts **AR session space to Unity world coordinates**.  
-  - Attach an **AR Camera** (with AR Camera Manager & Tracked Pose Driver).  
-- **Adding Objects in AR Space**:
-  - Place a **3D object (Cube)** in front of the camera for proper positioning.  
-
----
-
 ### **7. Building and Deploying to Mobile** 
 - Go to **Build Settings** → Select correct platform → Add open scenes.  
 - Click **Build**, create a **Builds Folder**, and export the project.  
@@ -191,28 +179,70 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 - Launch the AR app on the phone.  
 - **Grant camera access** (iOS).  
 - The placed **3D Cube appears in AR space**.  
+---
+
+YouTube Video Link: [https://www.youtube.com/watch?v=Nb62z3J4A_A](https://www.youtube.com/watch?v=Nb62z3J4A_A)  
 
 ---
 
-### **9. Exploring Unity's AR Foundation Samples** 
-- Unity provides **sample AR projects** on **GitHub**.  
-- Download the **sample scenes** (e.g., **image tracking, plane detection**) for reference.  
-- Future tutorials will cover **advanced AR features**.  
+### **Main Steps in the Video: "Building and Deploying an Android App from Windows using Unity"**  
+
+1. **Introduction to Android Build Process**  
+   - Explains the process of building an Android app from a Windows computer using Unity.  
+   - Notes that building for iOS requires a Mac with Xcode.  
+
+2. **Installing Required Modules in Unity**  
+   - Open **Unity Hub**, go to **Installs** → Click **Add Modules**.  
+   - Install:  
+     - **Android Build Support**  
+     - **SDK, NDK, and OpenJDK tools**  
+   - Restart Unity after installation.  
+
+3. **Verifying External Tools Installation**  
+   - Go to **Edit → Preferences → External Tools**.  
+   - Ensure paths for **JDK, SDK, and NDK** are correctly set.  
+
+4. **Setting Up Unity Build Settings**  
+   - Open **File → Build Settings**.  
+   - Add the current scene.  
+   - Select **Android** as the platform and switch.  
+
+5. **Enabling Developer Mode on Android Device**  
+   - Go to **Settings → About Phone → Software Info**.  
+   - Tap **Build Number** 7 times to enable **Developer Mode**.  
+   - Enable **USB Debugging** under **Developer Options**.  
+
+6. **Connecting and Authorizing Android Device**  
+   - Connect the phone via **USB cable**.  
+   - Authorize the connection when prompted on the phone.  
+   - Ensure the device appears under **Run Device** in Unity.  
+
+7. **Setting Up Player Settings**  
+   - Configure **Publishing Settings**:  
+     - Create and manage **Keystore** for app security.  
+   - Set **Company Name**, **Product Name**, and **App Version**.  
+   - Choose an **app icon** and adjust display settings (portrait/landscape).  
+   - Adjust **Splash Screen** and Unity logo settings.  
+
+8. **Configuring API Levels and Compatibility**  
+   - Set **Minimum API Level (API 29 or higher recommended for Play Store)**.  
+   - Ensure compatibility with the latest Android versions.  
+
+9. **Building and Deploying the App**  
+   - Enable **Development Build** for testing.  
+   - Click **Build and Run** to deploy the app to the connected phone.  
+   - Select **APK** file location and confirm the build process.  
+
+10. **Troubleshooting and Final Steps**  
+   - If errors occur, check Unity Console for details.  
+   - Ensure the correct API level is selected.  
+   - Use **Unity’s integrated SDK/NDK/JDK** instead of manual Android Studio installation to avoid errors.  
+
+11. **Conclusion and Patreon Shoutouts**  
+   - Thanks viewers and patrons for their support.  
+   - Encourages joining the **Discord community** for discussions and help.  
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1. **Add an AR Camera**:
    - `Hierarchy → XR → AR Session Origin`.
@@ -253,6 +283,49 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
 ---
 
 ## **3️⃣ Placing and Manipulating Objects in AR**
+YouTube Video Link: [https://www.youtube.com/watch?v=5puGSOSmTYc](https://www.youtube.com/watch?v=5puGSOSmTYc)  
+
+---
+
+### **Summary: "Placing and Interacting with Multiple AR Objects in Unity"**  
+
+1. **Introduction**  
+   - Demonstrates how to place multiple AR objects and interact with them.  
+   - Uses **AR Foundation** and **XR Interaction Toolkit** (no coding required).  
+
+2. **Project Setup**  
+   - Ensure **AR Foundation** and **XR Interaction Toolkit** are installed via **Package Manager**.  
+   - Set up **Player Settings** in Unity.  
+
+3. **Setting Up XR Components**  
+   - Remove **Main Camera**, add **XR Origin** and **XR Interaction Manager**.  
+   - Disable **XR Interactor Line Visual** to hide interaction lines.  
+   - Add **AR Session** and **AR Gesture Interactor** to recognize touch gestures.  
+
+4. **Enabling Plane Detection**  
+   - Add **AR Plane Manager** to detect surfaces.  
+   - Use Unity’s **default AR plane prefab**.  
+   - Set **detection mode** (horizontal, vertical, or both).  
+   - Add **AR Raycast Manager** to enable object placement.  
+
+5. **Placing AR Objects**  
+   - Use **AR Placement Interactable** (instead of scripting) to spawn objects.  
+   - Assign a **prefab** that will be placed when the user taps a detected plane.  
+
+6. **Interacting with Placed Objects**  
+   - **Move Objects**: Add **AR Translation Interactable**.  
+   - **Rotate Objects**: Use **AR Rotation Interactable** (twist or drag outside object).  
+   - **Scale Objects**: Add **AR Scale Interactable** with min/max limits.  
+   - **Selection Visualization**:  
+     - Highlights selected objects using a transparent **outline material**.  
+
+7. **Finalizing and Testing**  
+   - Build and deploy the AR project.  
+   - Move the camera to detect planes.  
+   - Tap to **spawn objects**, **select/deselect** them, and use gestures to **move, rotate, and scale**.  
+
+8. **Conclusion**  
+   - Encourages users to **like, subscribe, and join Discord** for questions and support.  
 
 ### **📌 A. Implement AR Object Placement**
 
