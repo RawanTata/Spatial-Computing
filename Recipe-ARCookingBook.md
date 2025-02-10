@@ -258,7 +258,9 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
    - Click **Build and Run** to deploy the app to the connected phone.  
    - Select **APK** file location and confirm the build process.  
 ---
-📌C. Setting Up AR Components in Unity
+
+3. Setting Up AR Components in Unity
+   
 1. **Add an AR Camera**:
    - `Hierarchy → XR → AR Session Origin`.
    - Inside **AR Session Origin**, add:
@@ -271,12 +273,8 @@ The **ARCore XR Plugin** package lets you build augmented reality apps for **And
      - **AR Plane Manager**
      - **AR Raycast Manager**
 
-**Now, Unity is ready for AR development!** 🎉
-
 ---
-## **3️ Placing and Manipulating Objects in AR**
-
-### **Summary: "Placing and Interacting with Multiple AR Objects in Unity"**  
+## **4 Placing and Manipulating Objects in AR**
 
 1. **Introduction**  
    - Demonstrates how to place multiple AR objects and interact with them.  
